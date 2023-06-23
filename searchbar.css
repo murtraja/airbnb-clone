@@ -1,13 +1,46 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --search-bar-icon-size: 1rem;
+  --muted-text-color: rgba(0, 0, 0, 0.4);
+}
+.search-icon-svg {
+  margin: 1rem;
+}
+.search-text-sub {
+  font-size: 0.9rem;
+  color: var(--muted-text-color);
+}
+.search-filter-icon {
+  /* height: calc(var(--search-bar-icon-size) * 2); */
+  height: 32px;
+  /* aspect-ratio: 1; */
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(30, 30, 30, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.search-outer svg {
+  width: 16px;
+  height: 16px;
+}
+.search-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 .search-outer {
-  border: 1px solid red;
+  border: 1px solid rgba(50, 50, 93, 0.25);
   height: 4rem;
   border-radius: 2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   display: flex;
+  align-items: center;
 }
 #filterKnobCircle {
   transition: all 2s;
