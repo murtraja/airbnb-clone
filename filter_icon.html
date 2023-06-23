@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      svg {
+        width: 400px;
+        height: 400px;
+        border: 1px solid red;
+        /* position: absolute; */
+      }
+      #filterKnobCircle {
+        transition: all 2s;
+      }
+      #filterKnobCircle:hover {
+        transform: translate(-6px);
+      }
+
+      #searchHandle {
+        transition: all 10s;
+        transform-origin: 13px 13px;
+      }
+      #searchHandle:hover {
+        transform: rotate(405deg);
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 16 16">
+      <g id="filterKnob" stroke="black" stroke-width="2">
+        <line x1="13.8" y1="5" x2="2.2" y2="5"></line>
+        <circle
+          id="filterKnobCircle"
+          cx="11"
+          cy="5"
+          r="2"
+          fill="white"
+        ></circle>
+      </g>
+      <use
+        href="#filterKnob"
+        transform="rotate(180 11 5) translate(6 -6)"
+      ></use>
+    </svg>
+    <!-- <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      aria-hidden="true"
+      role="presentation"
+      focusable="false"
+      style="fill: rgb(34, 34, 34, 0.3)"
+    >
+      <path
+        d="M5 8a3 3 0 0 1 2.83 2H14v2H7.83A3 3 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.83 4H2V4h6.17A3 3 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+      ></path>
+    </svg> -->
+    <svg viewBox="0 0 32 32">
+      <circle
+        cx="13"
+        cy="13"
+        r="11"
+        stroke-width="4"
+        fill="white"
+        stroke="black"
+      ></circle>
+      <line
+        id="searchHandle"
+        x1="25.9"
+        y1="13"
+        x2="37"
+        y2="13"
+        stroke="black"
+        stroke-width="4"
+        transform="rotate(45)"
+      ></line>
+    </svg>
+    <!-- <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      aria-hidden="true"
+      role="presentation"
+      focusable="false"
+      style="display: block; fill: rgba(34, 34, 34, 0.2)"
+    >
+      <path
+        d="M13 0a13 13 0 0 1 10.5 20.67l7.91 7.92-2.82 2.82-7.92-7.91A12.94 12.94 0 0 1 13 26a13 13 0 1 1 0-26zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"
+        opacity=".8"
+      ></path>
+    </svg> -->
+  </body>
+</html>

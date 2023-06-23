@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.search-outer {
+  border: 1px solid red;
+  height: 4rem;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+}
+#filterKnobCircle {
+  transition: all 2s;
+}
+#filterKnobCircle:hover {
+  transform: translate(-6px);
+}
+
+#searchHandle {
+  transition: all 10s;
+  transform-origin: 13px 13px;
+}
+#searchHandle:hover {
+  transform: rotate(405deg);
+}

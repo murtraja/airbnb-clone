@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search bar</title>
+    <link rel="stylesheet" href="searchbar.css" />
+  </head>
+  <body>
+    <div class="search-outer">
+      <svg viewBox="0 0 32 32">
+        <circle
+          cx="13"
+          cy="13"
+          r="11"
+          stroke-width="4"
+          fill="white"
+          stroke="black"
+        ></circle>
+        <line
+          id="searchHandle"
+          x1="25.9"
+          y1="13"
+          x2="37"
+          y2="13"
+          stroke="black"
+          stroke-width="4"
+          transform="rotate(45)"
+        ></line>
+      </svg>
+      <svg viewBox="0 0 16 16">
+        <g id="filterKnob" stroke="black" stroke-width="2">
+          <line x1="13.8" y1="5" x2="2.2" y2="5"></line>
+          <circle
+            id="filterKnobCircle"
+            cx="11"
+            cy="5"
+            r="2"
+            fill="white"
+          ></circle>
+        </g>
+        <use
+          href="#filterKnob"
+          transform="rotate(180 11 5) translate(6 -6)"
+        ></use>
+      </svg>
+      <!-- <div class="circle"></div> -->
+    </div>
+  </body>
+</html>
