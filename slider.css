@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+.slider-outer {
+  height: 32px;
+  width: 48px;
+  border: 1px solid red;
+  border-radius: 16px;
+  background-color: white;
+}
+.slider-circle {
+  height: 32px;
+  width: 32px;
+  border: 1px solid purple;
+  border-radius: 50%;
+  transition: all 1s;
+}
+input[type="checkbox"]:checked {
+  outline: 1px solid green;
+}
+input[type="checkbox"] {
+  outline: 1px solid rgba(0, 255, 0, 0.3);
+}
+/*              WHEN          */ /*        TO WHOM          */
+input[type="checkbox"]:checked ~ .slider-outer .slider-circle {
+  background-color: yellow;
+  transform: translate(16px);
+}
