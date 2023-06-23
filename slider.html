@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="slider.css" />
   </head>
   <body>
-    <input type="checkbox" />
+    <input id="sliderCheckbox" type="checkbox" />
 
-    <div class="slider-outer">
-      <div class="slider-circle"></div>
-    </div>
+    <label for="sliderCheckbox">
+      <div class="slider-outer">
+        <div class="slider-circle-outer">
+          <div class="slider-circle"></div>
+        </div>
+      </div>
+    </label>
   </body>
 </html>
+
+<!-- 
+    1. We have to hide the checkbox (smartly)
+    2. Clicking on slider should change state
+ -->

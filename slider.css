@@ -4,14 +4,26 @@
 .slider-outer {
   height: 32px;
   width: 48px;
-  border: 1px solid red;
   border-radius: 16px;
-  background-color: white;
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+.slider-circle-outer {
+  /* border: 1px solid black; */
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* padding-left: 7px; */
+  /* padding-right: 7px; */
 }
 .slider-circle {
-  height: 32px;
-  width: 32px;
-  border: 1px solid purple;
+  height: 24px;
+  width: 24px;
+  /* border: 1px solid purple; */
+  background-color: yellow;
   border-radius: 50%;
   transition: all 1s;
 }
@@ -20,9 +32,9 @@ input[type="checkbox"]:checked {
 }
 input[type="checkbox"] {
   outline: 1px solid rgba(0, 255, 0, 0.3);
+  display: none;
 }
 /*              WHEN          */ /*        TO WHOM          */
-input[type="checkbox"]:checked ~ .slider-outer .slider-circle {
-  background-color: yellow;
-  transform: translate(16px);
+input[type="checkbox"]:checked ~ label .slider-circle {
+  transform: translate(50%);
 }
