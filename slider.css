@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .slider-outer {
-  height: 5rem;
+  height: 3rem;
   aspect-ratio: 1.5; /* width/height=1.5 */
   border-radius: 33.33% / 50%;
   /*
@@ -22,7 +22,7 @@
   align-items: center;
 }
 .slider-circle-outer {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   height: 80%;
   width: 80%;
   margin: 0 auto;
@@ -45,4 +45,17 @@ input[type="checkbox"] {
 /*              WHEN          */ /*        TO WHOM          */
 input[type="checkbox"]:checked ~ label .slider-circle {
   transform: translate(50%);
+}
+.total-price {
+  /* outline: 1px solid red; */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+.total-price-sub {
+  color: grey;
+  margin-top: 0.15rem;
 }
