@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  /* border: 1px solid red; */
+}
+.card-img {
+  height: 200px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.heart-svg {
+  fill: rgba(0, 0, 0, 0.5);
+  height: 24px;
+  width: 24px;
+  stroke: white;
+  stroke-width: 2;
+  position: absolute;
+  right: 0px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.card-img-container {
+  /* border: 1px solid purple; */
+  width: fit-content;
+  position: relative;
+}
+.img-arrow {
+  background-color: white;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  height: 1.3rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.card-info {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  /* border: 3px solid yellow; */
+  width: fit-content;
+}
+.card:hover .img-arrow {
+  opacity: 0.7;
+}
+.card .img-arrow:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.card-maintext {
+  font-size: 0.9rem;
+}
+.card-subtext {
+  font-size: 0.8rem;
+  color: grey;
+}
