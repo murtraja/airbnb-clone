@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb - Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="searchbar.css" />
+    <link rel="stylesheet" href="catagory.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="content.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Search bar -->
+      <div class="search-outer">
+        <svg class="search-icon-svg" viewBox="0 0 32 32">
+          <circle
+            cx="13"
+            cy="13"
+            r="11"
+            stroke-width="4"
+            fill="white"
+            stroke="black"
+          ></circle>
+          <line
+            id="searchHandle"
+            x1="25.9"
+            y1="13"
+            x2="37"
+            y2="13"
+            stroke="black"
+            stroke-width="4"
+            transform="rotate(45)"
+          ></line>
+        </svg>
+        <div class="search-text">
+          <span class="search-text-main"><strong>Anywhere</strong></span>
+          <span class="search-text-sub">Any week • Add guests</span>
+        </div>
+        <div class="search-filter-icon">
+          <svg class="search-filter-icon-svg" viewBox="0 0 16 16">
+            <g id="filterKnob" stroke="black" stroke-width="2">
+              <line x1="13.8" y1="5" x2="2.2" y2="5"></line>
+              <circle
+                id="filterKnobCircle"
+                cx="11"
+                cy="5"
+                r="2"
+                fill="white"
+              ></circle>
+            </g>
+            <use
+              href="#filterKnob"
+              transform="rotate(180 11 5) translate(6 -6)"
+            ></use>
+          </svg>
+        </div>
+      </div>
+      <!-- Category scroller -->
+      <div class="overflow-container">
+        <div class="navtwo">
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Rooms</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Farm</span>
+          </div>
+          <div class="active">
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Amazing View</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Amazing Pools</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Earth Homes</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>OMG!</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Tropical</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Beachfront</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Lakefront</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Cabins</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Treehouse</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Design</span>
+          </div>
+          <div>
+            <img
+              src="./3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+              alt="loading"
+            />
+            <span>Countryside</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="total-price">
+        <div>
+          <div><strong>Display total price</strong></div>
+          <div class="total-price-sub">Includes all fees, before taxes</div>
+        </div>
+        <div>
+          <input id="sliderCheckbox" type="checkbox" />
+          <label for="sliderCheckbox">
+            <div class="slider-outer">
+              <div class="slider-circle-outer">
+                <div class="slider-circle"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- 1st row -->
+      <div class="footer-map">
+        Map
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          aria-hidden="true"
+          role="presentation"
+          focusable="false"
+          style="
+            display: block;
+            height: 16px;
+            width: 16px;
+            fill: rgb(255, 255, 255);
+            margin-left: 7px;
+          "
+        >
+          <path
+            d="M31.25 3.75a2.29 2.29 0 0 0-1.01-1.44A2.29 2.29 0 0 0 28.5 2L21 3.67l-10-2L2.5 3.56A2.29 2.29 0 0 0 .7 5.8v21.95a2.28 2.28 0 0 0 1.06 1.94A2.29 2.29 0 0 0 3.5 30L11 28.33l10 2 8.49-1.89a2.29 2.29 0 0 0 1.8-2.24V4.25a2.3 2.3 0 0 0-.06-.5zM12.5 25.98l-1.51-.3L9.5 26H9.5V4.66l1.51-.33 1.49.3v21.34zm10 1.36-1.51.33-1.49-.3V6.02l1.51.3L22.5 6h.01v21.34z"
+          ></path>
+        </svg>
+      </div>
+      <!-- 2nd row -->
+      <div class="footer-element footer-empty-start"></div>
+      <div class="footer-element">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Explore</span>
+      </div>
+      <div class="footer-element">
+        <i class="fa-regular fa-heart"></i>
+        <span>Wishlists</span>
+      </div>
+      <div class="footer-element">
+        <i class="fa-regular fa-circle-user"></i>
+        <span>Log in</span>
+      </div>
+      <div class="footer-element"></div>
+    </footer>
+  </body>
+</html>

@@ -19,13 +19,15 @@
   grid-row-gap: 2rem;
 }
 .footer-element {
-  background-color: purple;
+  background-color: white;
   height: 65px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  /* box-shadow: 0px -5px 2px 0px rgba(128, 128, 128, 0.3); */
 }
 .footer-element > span {
   font-size: 1rem;
