@@ -2,14 +2,12 @@
   box-sizing: border-box;
   margin: 0;
 }
-body {
-  /* border: 1px solid red; */
-}
 .card-img {
-  height: 200px;
+  width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 1rem;
+  position: relative;
 }
 .heart-svg {
   fill: rgba(0, 0, 0, 0.5);
@@ -23,7 +21,7 @@ body {
   margin-top: 1rem;
 }
 .card-img-container {
-  /* border: 1px solid purple; */
+  /* outline: 1px solid purple; */
   width: fit-content;
   position: relative;
 }
@@ -44,13 +42,14 @@ body {
 }
 
 .card-info {
-  /* border: 1px solid red; */
+  /* outline: 1px solid red; */
   display: flex;
   justify-content: space-between;
 }
 .card {
   /* border: 3px solid yellow; */
   width: fit-content;
+  margin-top: 1rem;
 }
 .card:hover .img-arrow {
   opacity: 0.7;
@@ -65,4 +64,31 @@ body {
 .card-subtext {
   font-size: 0.8rem;
   color: grey;
+}
+.card-container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (min-width: 550px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    /* outline: 1px solid black; */
+    /* width: 34%; */
+  }
+  .card {
+    /* outline: 1px solid white; */
+    width: calc(50% - 1rem);
+  }
+  .card-img-container {
+    /* outline: 1px solid white; */
+    /* width: 300px; */
+  }
+  .card-img {
+    /* width: 30%; */
+  }
 }

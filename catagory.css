@@ -26,7 +26,7 @@
   display: none;
   /* Safari and Chrome */
 }
-div img {
+.navtwo div img {
   width: 24px;
   opacity: 0.6;
 }
